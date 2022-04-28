@@ -5,7 +5,7 @@ export const getPhotos = async (
   page: number,
   collback: React.Dispatch<React.SetStateAction<IPhoto[]>>
 ) => {
-  const response = await fetch(`${url}/${page}/photos`);
+  const response = await fetch(`${url}albums/${page}/photos`);
   const photos = await response.json();
   collback((prevState) => prevState.concat(photos));
 };

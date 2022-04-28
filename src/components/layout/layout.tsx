@@ -11,7 +11,7 @@ export const Layout: React.FC<IProps> = React.memo(
       <section
         className={`${
           className ? className : ''
-        } md:max-w-4xl m-auto md:px-4 px-2`}
+        } md:max-w-7xl m-auto md:px-4 px-2`}
       >
         {children}
       </section>
