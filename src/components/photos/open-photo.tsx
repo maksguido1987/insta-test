@@ -6,7 +6,7 @@ interface IProps {
   alt: string;
 }
 
-export const OpenedPhoto: React.FC<IProps> = ({ src, alt }) => {
+export const OpenPhoto: React.FC<IProps> = ({ src, alt }) => {
   return (
     <div className='basis-2/3 lg:mr-5 sm:mr-2 mb-5 sm:mb-0 rounded-md'>
       <div className='relative pb-[100%]'>
