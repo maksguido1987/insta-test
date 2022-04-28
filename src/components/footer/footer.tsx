@@ -1,12 +1,9 @@
 import React from 'react'
-import { Layout } from '../layout'
 
 export const Footer = () => {
   return (
-    <Layout>
-      <footer>
-        Footer
-      </footer>
-    </Layout>
+    <footer className='md:max-w-4xl m-auto md:px-4 px-2 text-gray-800'>
+      Footer
+    </footer>
   )
 }

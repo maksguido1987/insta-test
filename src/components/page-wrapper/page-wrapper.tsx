@@ -8,12 +8,12 @@ interface IProps {
 
 export const PageWrapper: React.FC<IProps> = ({ children }) => {
   return (
-    <div className='flex flex-col min-h-screen bg-fon bg-no-repeat bg-cover'>
-      <div className='border-b border-gray-200'>
+    <div className='flex flex-col min-h-screen bg-neutral-200'>
+      <div className='border-b border-white'>
         <Header />
       </div>
       <main className='min-w-full grow'>{children}</main>
-      <div className='border-t border-gray-200'>
+      <div className='border-t border-white'>
         <Footer />
       </div>
     </div>

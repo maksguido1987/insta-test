@@ -4,11 +4,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'fon': "url('../../public/images/bg/fon.webp')"
-      }
-    },
+    extend: {},
   },
   plugins: [],
 };

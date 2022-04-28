@@ -8,8 +8,12 @@ interface IProps {
 export const Layout: React.FC<IProps> = React.memo(
   ({ children, className }) => {
     return (
-      <section className={className ? className : ''}>
-        <div className='md:max-w-5xl m-auto md:px-4 px-2'>{children}</div>
+      <section
+        className={`${
+          className ? className : ''
+        } md:max-w-4xl m-auto md:px-4 px-2`}
+      >
+        {children}
       </section>
     );
   }
