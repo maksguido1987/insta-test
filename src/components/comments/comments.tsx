@@ -28,7 +28,7 @@ export const Comments: React.FC<IProps> = ({ comments }) => {
       <h3 className='font-semibold md:font-bold mb-2 sm:mb-5 text-center sm:text-2xl text-xl text-gray-800'>
         Comments
       </h3>
-      {commentsState.map(renderComment)}
+      {commentsState.length && commentsState.map(renderComment)}
       <AddComment onAddComment={onAddComment} />
     </div>
   );

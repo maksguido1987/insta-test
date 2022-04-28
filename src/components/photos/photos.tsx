@@ -16,7 +16,7 @@ export const Photos = React.forwardRef<HTMLDivElement, IPhotosProps>(
 
     return (
       <Layout className='grid md:grid-cols-3 sm:grid-cols-2 gap-2 pt-1'>
-        {photos.map(renderPhoto)}
+        {photos.length && photos.map(renderPhoto)}
         <div ref={ref}></div>
       </Layout>
     );

@@ -27,7 +27,6 @@ const Home: NextPage<
   useEffect(() => {
     isVisible && setPage((prevState) => prevState + 1);
     isVisible && getPhotos(page, setPhotosState);
-    console.log(photosState);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVisible]);
 
