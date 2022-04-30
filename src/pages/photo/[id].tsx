@@ -1,6 +1,5 @@
 import {
   GetServerSideProps,
-  InferGetServerSidePropsType,
   NextPage,
 } from 'next';
 import getConfig from 'next/config';
@@ -10,9 +9,12 @@ import { IComment, IPhoto } from '../../types';
 const { publicRuntimeConfig } = getConfig();
 export const { API_BASE_URL } = publicRuntimeConfig;
 
-const Photo: NextPage<
-  InferGetServerSidePropsType<typeof getServerSideProps>
-> = ({ photo, comments }) => {
+interface IProps {
+  photo: IPhoto;
+  comments: IComment[];
+}
+
+const Photo: NextPage<IProps> = ({ photo, comments }) => {
 
   const { url, title } = photo;
 

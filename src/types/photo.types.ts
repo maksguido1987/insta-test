@@ -5,3 +5,7 @@ export interface IPhoto {
   title: string;
   url: string;
 }
+
+export interface IPhotos {
+  photos: IPhoto[];
+}

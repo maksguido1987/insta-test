@@ -21,7 +21,7 @@ export const AddComment: React.FC<IProps> = ({ className, onAddComment }) => {
     setEmail(value);
   };
 
-  const handleTNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
     setName(value);
   };
@@ -62,7 +62,7 @@ export const AddComment: React.FC<IProps> = ({ className, onAddComment }) => {
         placeholder='Your name'
         required
         value={name}
-        onChange={handleTNameChange}
+        onChange={handleNameChange}
       />
       <input
         type='submit'

@@ -1,6 +1,5 @@
 import type {
   GetServerSideProps,
-  InferGetServerSidePropsType,
   NextPage,
 } from 'next';
 import getConfig from 'next/config';
@@ -14,9 +13,7 @@ import { IPhoto } from '../types';
 const { publicRuntimeConfig } = getConfig();
 export const { API_BASE_URL } = publicRuntimeConfig;
 
-const Home: NextPage<
-  InferGetServerSidePropsType<typeof getServerSideProps>
-> = ({ photos }) => {
+const Home: NextPage<{photos: IPhoto[]}> = ({ photos }) => {
   const [photosState, setPhotosState] = useState<IPhoto[]>(photos);
   const [page, setPage] = useState(pageCount);
 
